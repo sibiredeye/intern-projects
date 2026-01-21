@@ -14,6 +14,7 @@ DURATION: 6 WEEKS
 MENTOR : NEELA SANTHOSH
 
 #DESCRIPTION
+        A Text Summarization Tool is a Python-based application that generates a short summary from a given text. It uses basic Natural Language Processing (NLP) techniques with the NLTK library. The tool accepts external input from the user or a text file, analyzes word frequency, and selects the most important sentences. This beginner-friendly project helps in understanding tokenization, sentence ranking, and automated text processing.
 
 
 #OUTPUT
