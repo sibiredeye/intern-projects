@@ -1,0 +1,26 @@
+import nltk
+import nltk
+from nltk.tokenize import sent_tokenize, word_tokenize
+from collections import Counter
+
+def summarize_text(text, num_sentences=2):
+    sentences = sent_tokenize(text)
+    words = word_tokenize(text.lower())
+
+    word_freq = Counter(words)
+
+    sentence_scores = {}
+    for sentence in sentences:
+        for word in word_tokenize(sentence.lower()):
+            if word in word_freq:
+                sentence_scores[sentence] = sentence_scores.get(sentence, 0) + word_freq[word]
+
+    summary = sorted(sentence_scores, key=sentence_scores.get, reverse=True)
+    return " ".join(summary[:num_sentences])
+
+# for input
+text = input("Enter the text to summarize:\n")
+summary = summarize_text(text)
+
+print("\nSummary:")
+print(summary)
