@@ -1,4 +1,4 @@
-# intern-projects
+#  CODTECH intern-projects
 
 COMPANY: CODTECH IT SOLUTIONS
 NAME: SIBI CHAKRAVARTHI R
